@@ -1,0 +1,33 @@
+[2022-02-19 19:05:10.703] [renderer1] [info] IExtensionHostStarter.start() took 14 ms.
+[2022-02-19 19:05:10.727] [renderer1] [critical] Extension 'ms-python.python CANNOT USE these API proposals 'languageStatus, quickPickSortByLabel, testObserver, notebookEditor'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+[2022-02-19 19:05:10.728] [renderer1] [critical] Extension 'ms-toolsai.jupyter CANNOT USE these API proposals 'notebookConcatTextDocument, notebookControllerKind, notebookDebugOptions, notebookDeprecated, notebookEditor, notebookEditorDecorationType, notebookEditorEdit, notebookMessaging, notebookMime, notebookCellExecutionState, portsAttributes, textDocumentNotebook, quickPickSortByLabel'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+[2022-02-19 19:05:10.971] [renderer1] [error] [Extension Host] (node:405070) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `electron --trace-deprecation ...` to show where the warning was created)
+[2022-02-19 19:05:11.533] [renderer1] [error] [Extension Host] extension activation failed Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookEditor.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookEditor.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at E (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:64217)
+	at Object.onDidChangeCellMetadata (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:107:51867)
+	at u.addEventHandlers (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:796055)
+	at new u (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:794720)
+	at Object.t.resolveInstance (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:238380)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:237585
+	at Array.map (<anonymous>)
+	at Object.t.resolveInstance (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:238150)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:237585
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:236533
+	at Array.map (<anonymous>)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:236505
+	at Array.map (<anonymous>)
+	at Object.t.resolveInstance (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:238150)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:237585
+	at Object.t.resolve (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:237848)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:228945
+	at e._get (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:228711)
+	at e.get (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:227423)
+	at a.get (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:124:61150)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:276365
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+	at async /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:51:786403
+	at async t.activate (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:51:786082)
+	at async Promise.all (index 1)

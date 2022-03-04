@@ -1,0 +1,19 @@
+[2022-02-17 15:09:13.442] [sharedprocess] [info] Starting worker process with pid 2703 (type: fileWatcher, window: 1).
+[2022-02-17 15:09:13.504] [sharedprocess] [info] Deleted from disk ms-toolsai.jupyter /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1201832589
+[2022-02-17 19:53:48.165] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-02-17 19:55:03.989] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-02-17 19:55:14.192] [sharedprocess] [error] No ptyHost heartbeat after 12 seconds
+[2022-02-17 20:44:34.373] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-02-17 20:44:34.502] [sharedprocess] [error] No ptyHost heartbeat after 12 seconds
+[2022-02-17 20:44:34.503] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-02-17 20:44:34.503] [sharedprocess] [error] No ptyHost heartbeat after 12 seconds
+[2022-02-17 20:55:21.966] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-02-17 20:57:05.931] [sharedprocess] [error] No ptyHost heartbeat after 12 seconds
+[2022-02-17 21:17:24.064] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-02-17 21:21:11.062] [sharedprocess] [error] No ptyHost heartbeat after 12 seconds
+[2022-02-17 21:22:14.113] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-02-17 21:22:22.919] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-02-17 21:26:15.927] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-02-17 21:27:53.712] [sharedprocess] [error] No ptyHost heartbeat after 12 seconds
+[2022-02-17 21:56:20.762] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-02-17 22:04:09.320] [sharedprocess] [error] No ptyHost heartbeat after 12 seconds

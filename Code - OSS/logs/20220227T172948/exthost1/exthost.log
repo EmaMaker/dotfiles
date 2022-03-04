@@ -1,0 +1,34 @@
+[2022-02-27 17:29:50.053] [exthost] [info] Extension host with pid 14497 started
+[2022-02-27 17:29:50.053] [exthost] [info] Skipping acquiring lock for /home/emamaker/.config/Code - OSS/User/workspaceStorage/ad678c3f5449be06a12cdda7cc756f1a.
+[2022-02-27 17:29:50.091] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-02-27 17:29:50.094] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-02-27 17:29:50.129] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-02-27 17:29:50.156] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-02-27 17:29:50.177] [exthost] [info] Eager extensions activated
+[2022-02-27 17:29:50.195] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 17:29:50.203] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 17:32:36.647] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-02-27 17:32:36.652] [exthost] [info] Extension host with pid 14497 exiting with code 0
+[2022-02-27 17:32:37.965] [exthost] [info] Extension host with pid 15220 started
+[2022-02-27 17:32:37.965] [exthost] [info] Skipping acquiring lock for /home/emamaker/.config/Code - OSS/User/workspaceStorage/e0531f3b9d6e27acdd35ee604f223cea.
+[2022-02-27 17:32:38.006] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-02-27 17:32:38.009] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-02-27 17:32:38.018] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-02-27 17:32:38.027] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-02-27 17:32:38.050] [exthost] [info] Eager extensions activated
+[2022-02-27 17:32:38.054] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 17:32:38.057] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 17:32:58.120] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-02-27 17:32:58.125] [exthost] [info] Extension host with pid 15220 exiting with code 0
+[2022-02-27 17:32:59.465] [exthost] [info] Extension host with pid 15336 started
+[2022-02-27 17:32:59.465] [exthost] [info] Skipping acquiring lock for /home/emamaker/.config/Code - OSS/User/workspaceStorage/f716d36175bf159850d12ec9bac1bf1f.
+[2022-02-27 17:32:59.500] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-02-27 17:32:59.502] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-02-27 17:32:59.509] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-02-27 17:32:59.518] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-02-27 17:32:59.536] [exthost] [info] Eager extensions activated
+[2022-02-27 17:32:59.541] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 17:32:59.544] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 17:35:57.158] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-server-ready, startup: false, activationEvent: 'onDebugResolve'
+[2022-02-27 18:45:04.510] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-02-27 18:45:04.512] [exthost] [info] Extension host with pid 15336 exiting with code 0

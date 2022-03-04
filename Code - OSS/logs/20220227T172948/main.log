@@ -1,0 +1,12 @@
+[2022-02-27 17:29:48.256] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-02-27 17:29:48.367] [main] [info] ExtensionHostStarterWorker created
+[2022-02-27 17:29:49.582] [main] [info] Starting extension host with pid 14497 (fork() took 6 ms).
+[2022-02-27 17:29:49.583] [main] [info] ExtensionHostStarterWorker.start() took 6 ms.
+[2022-02-27 17:32:36.665] [main] [info] Extension host with pid 14497 exited with code: 0, signal: null.
+[2022-02-27 17:32:37.647] [main] [info] Starting extension host with pid 15220 (fork() took 4 ms).
+[2022-02-27 17:32:37.647] [main] [info] ExtensionHostStarterWorker.start() took 6 ms.
+[2022-02-27 17:32:58.134] [main] [info] Extension host with pid 15220 exited with code: 0, signal: null.
+[2022-02-27 17:32:59.128] [main] [info] Starting extension host with pid 15336 (fork() took 5 ms).
+[2022-02-27 17:32:59.128] [main] [info] ExtensionHostStarterWorker.start() took 6 ms.
+[2022-02-27 18:45:04.538] [main] [info] Waiting for extension host with pid 15336 to exit.
+[2022-02-27 18:45:04.538] [main] [info] Extension host with pid 15336 exited with code: 0, signal: null.

@@ -1,0 +1,22 @@
+[2022-02-25 21:35:41.111] [renderer1] [info] IExtensionHostStarter.start() took 13 ms.
+[2022-02-25 21:35:41.135] [renderer1] [critical] Extension 'ms-python.python CANNOT USE these API proposals 'languageStatus, quickPickSortByLabel, testObserver, notebookEditor'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+[2022-02-25 21:35:41.136] [renderer1] [critical] Extension 'ms-toolsai.jupyter CANNOT USE these API proposals 'notebookConcatTextDocument, notebookControllerKind, notebookDebugOptions, notebookDeprecated, notebookEditor, notebookEditorDecorationType, notebookEditorEdit, notebookMessaging, notebookMime, notebookCellExecutionState, portsAttributes, textDocumentNotebook, quickPickSortByLabel'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+[2022-02-25 21:35:41.349] [renderer1] [error] [Extension Host] (node:4427) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `electron --trace-deprecation ...` to show where the warning was created)
+[2022-02-25 23:01:35.547] [renderer1] [error] Error: Unable to write file 'vscode-userdata:/home/emamaker/.config/Code - OSS/Backups/fb3a0251979cb29dd83d6758eabd3e65/file/-43df0ad8' (Unknown (FileSystemError): Error: ENOSPC: no space left on device, write)
+    at p.writeFile (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:578:39628)
+    at async Object.factory (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2348:16373)
+[2022-02-25 23:01:38.359] [renderer1] [error] [uncaught exception in main]: SQLITE_ERROR: cannot commit - no transaction is active: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:42.596] [renderer1] [error] Error: Unable to write file 'vscode-userdata:/home/emamaker/.config/Code - OSS/Backups/fb3a0251979cb29dd83d6758eabd3e65/file/-43df0ad8' (Unknown (FileSystemError): Error: ENOSPC: no space left on device, write)
+    at p.writeFile (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:578:39628)
+    at async Object.factory (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2348:16373)
+[2022-02-25 23:01:48.251] [renderer1] [error] Error: Unable to write file 'vscode-userdata:/home/emamaker/.config/Code - OSS/Backups/fb3a0251979cb29dd83d6758eabd3e65/file/-43df0ad8' (Unknown (FileSystemError): Error: ENOSPC: no space left on device, write)
+    at p.writeFile (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:578:39628)
+    at async Object.factory (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2348:16373)
+[2022-02-25 23:01:49.691] [renderer1] [error] [uncaught exception in main]: SQLITE_ERROR: cannot commit - no transaction is active: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:02:10.793] [renderer1] [error] [uncaught exception in main]: SQLITE_ERROR: cannot commit - no transaction is active: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:04:01.111] [renderer1] [error] Error: Unable to write file 'vscode-userdata:/home/emamaker/.config/Code - OSS/Backups/fb3a0251979cb29dd83d6758eabd3e65/file/-7bf9cf98' (Unknown (FileSystemError): Error: ENOSPC: no space left on device, write)
+    at p.writeFile (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:578:39628)
+    at async Object.factory (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2348:16373)
+[2022-02-25 23:04:01.949] [renderer1] [error] [uncaught exception in main]: SQLITE_ERROR: cannot commit - no transaction is active: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:04:41.107] [renderer1] [error] [uncaught exception in main]: SQLITE_ERROR: cannot commit - no transaction is active: Error: SQLITE_ERROR: cannot commit - no t

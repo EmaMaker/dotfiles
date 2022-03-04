@@ -1,0 +1,17 @@
+[2022-02-17 15:09:13.269] [exthost] [info] Extension host with pid 2640 started
+[2022-02-17 15:09:13.269] [exthost] [info] Skipping acquiring lock for /home/emamaker/.config/Code - OSS/User/workspaceStorage/bf5fac1e2af9dd3a5a18e4def7a719b9.
+[2022-02-17 15:09:13.304] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+[2022-02-17 15:09:13.366] [exthost] [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+[2022-02-17 15:09:13.472] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-02-17 15:09:13.475] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-02-17 15:09:13.498] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-02-17 15:09:13.522] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-02-17 15:09:13.684] [exthost] [info] Eager extensions activated
+[2022-02-17 15:09:13.706] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-17 15:09:13.718] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-17 15:20:21.424] [exthost] [error] [ms-python.python] provider FAILED
+[2022-02-17 15:20:21.424] [exthost] [error] Error: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 128 ('\n').
+	at /home/emamaker/.vscode-oss/extensions/ms-python.python-2022.0.1814523869/out/client/extension.js:67:139263
+	at /home/emamaker/.vscode-oss/extensions/ms-python.python-2022.0.1814523869/out/client/extension.js:67:139557
+	at Immediate.<anonymous> (/home/emamaker/.vscode-oss/extensions/ms-python.python-2022.0.1814523869/out/client/extension.js:67:139920)
+	at processImmediate (internal/timers.js:461:21)

@@ -1,0 +1,30 @@
+[2022-02-25 21:35:39.712] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-02-25 21:35:39.744] [main] [info] ExtensionHostStarterWorker created
+[2022-02-25 21:35:41.105] [main] [info] Starting extension host with pid 4427 (fork() took 6 ms).
+[2022-02-25 21:35:41.105] [main] [info] ExtensionHostStarterWorker.start() took 6 ms.
+[2022-02-25 23:01:38.357] [main] [error] [storage state.vscdb] prepare(): Error: SQLITE_FULL: database or disk is full (INSERT INTO ItemTable VALUES (?,?),(?,?),(?,?),(?,?)). Details: Keys: memento/workbench.parts.editor, editors.mru, history.entries, memento/workbench.editors.files.textFileEditor Length: 7255
+[2022-02-25 23:01:38.358] [main] [error] [storage state.vscdb] transaction(): Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:38.359] [main] [error] [uncaught exception in main]: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:38.359] [main] [error] Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:38.359] [main] [error] [uncaught exception in main]: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:38.359] [main] [error] Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:38.359] [main] [error] [uncaught exception in main]: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:38.359] [main] [error] Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:38.359] [main] [error] [uncaught exception in main]: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:38.359] [main] [error] Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:49.689] [main] [error] [storage state.vscdb] prepare(): Error: SQLITE_FULL: database or disk is full (INSERT INTO ItemTable VALUES (?,?)). Details: Keys: memento/workbench.editors.files.textFileEditor Length: 3682
+[2022-02-25 23:01:49.690] [main] [error] [storage state.vscdb] transaction(): Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:49.690] [main] [error] [uncaught exception in main]: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:01:49.690] [main] [error] Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:02:10.792] [main] [error] [storage state.vscdb] prepare(): Error: SQLITE_FULL: database or disk is full (INSERT INTO ItemTable VALUES (?,?),(?,?),(?,?),(?,?)). Details: Keys: memento/workbench.parts.editor, editors.mru, history.entries, memento/workbench.editors.files.textFileEditor Length: 7255
+[2022-02-25 23:02:10.792] [main] [error] [storage state.vscdb] transaction(): Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:02:10.793] [main] [error] [uncaught exception in main]: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:02:10.793] [main] [error] Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:02:10.793] [main] [error] [uncaught exception in main]: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:02:10.793] [main] [error] Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:02:10.793] [main] [error] [uncaught exception in main]: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:02:10.793] [main] [error] Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:02:10.793] [main] [error] [uncaught exception in main]: Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:02:10.793] [main] [error] Error: SQLITE_ERROR: cannot commit - no transaction is active
+[2022-02-25 23:04:01.947] [main] [error] [storage state.vscdb] prepare(): Error: SQLITE_FULL: database or disk is full (INSERT INTO ItemTable VALUES (?,?),(?,?),(?,?),(?,?)). Details: Keys: memento/workbench.parts.editor, editors.mru, history.entries, memento/workbench.editors.files.textFileEditor Length: 7333
+[2022-02-25 23:04:01.948

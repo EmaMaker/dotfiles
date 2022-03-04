@@ -1,0 +1,9 @@
+[2022-02-17 14:50:33.171] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-02-17 14:50:33.194] [main] [info] ExtensionHostStarterWorker created
+[2022-02-17 14:50:34.227] [main] [info] Starting extension host with pid 18920 (fork() took 7 ms).
+[2022-02-17 14:50:34.227] [main] [info] ExtensionHostStarterWorker.start() took 7 ms.
+[2022-02-17 14:53:22.967] [main] [info] Extension host with pid 18920 exited with code: 0, signal: null.
+[2022-02-17 14:53:23.973] [main] [info] Starting extension host with pid 19494 (fork() took 5 ms).
+[2022-02-17 14:53:23.973] [main] [info] ExtensionHostStarterWorker.start() took 7 ms.
+[2022-02-17 15:07:21.719] [main] [info] Extension host with pid 19494 exited with code: null, signal: SIGTERM.
+[2022-02-17 15:07:22.020] [main] [error] CodeWindow: renderer process crashed (reason: killed, code: 15)

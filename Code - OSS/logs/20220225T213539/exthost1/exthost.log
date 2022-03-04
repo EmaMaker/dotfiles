@@ -1,0 +1,10 @@
+[2022-02-25 21:35:41.395] [exthost] [info] Extension host with pid 4427 started
+[2022-02-25 21:35:41.395] [exthost] [info] Skipping acquiring lock for /home/emamaker/.config/Code - OSS/User/workspaceStorage/ad678c3f5449be06a12cdda7cc756f1a.
+[2022-02-25 21:35:41.432] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-02-25 21:35:41.447] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-02-25 21:35:41.464] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-02-25 21:35:41.484] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-02-25 21:35:41.520] [exthost] [info] Eager extensions activated
+[2022-02-25 21:35:41.535] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-25 21:35:41.542] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-25 21:49:15.454] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'

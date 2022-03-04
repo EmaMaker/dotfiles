@@ -1,0 +1,5 @@
+[2022-02-24 19:57:23.984] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-02-24 19:57:24.018] [main] [info] ExtensionHostStarterWorker created
+[2022-02-24 19:57:26.889] [main] [info] Starting extension host with pid 177995 (fork() took 8 ms).
+[2022-02-24 19:57:26.889] [main] [info] ExtensionHostStarterWorker.start() took 9 ms.
+[2022-02-24 22:23:21.510] [main] [info] Extension host with pid 177995 exited with code: null, signal: SIGTERM.

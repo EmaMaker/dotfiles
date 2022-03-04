@@ -1,0 +1,6 @@
+[2022-02-19 19:05:09.447] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-02-19 19:05:09.465] [main] [info] ExtensionHostStarterWorker created
+[2022-02-19 19:05:10.700] [main] [info] Starting extension host with pid 405070 (fork() took 9 ms).
+[2022-02-19 19:05:10.700] [main] [info] ExtensionHostStarterWorker.start() took 11 ms.
+[2022-02-19 20:58:48.463] [main] [info] Enabling inspect port on extension host with pid 405070.
+[2022-02-19 20:58:51.465] [main] [info] Enabling inspect port on extension host with pid 405070.

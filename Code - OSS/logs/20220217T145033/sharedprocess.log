@@ -1,0 +1,10 @@
+[2022-02-17 14:50:34.859] [sharedprocess] [info] Starting worker process with pid 18981 (type: fileWatcher, window: 1).
+[2022-02-17 14:50:36.921] [sharedprocess] [info] Getting Manifest... ms-toolsai.jupyter
+[2022-02-17 14:50:37.699] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter
+[2022-02-17 14:50:41.729] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter /home/emamaker/.config/Code - OSS/CachedExtensionVSIXs/ms-toolsai.jupyter-2022.1.1301856528
+[2022-02-17 14:50:42.166] [sharedprocess] [info] Extracted extension to /home/emamaker/.vscode-oss/extensions/.dc93c958-5d6b-40e7-a073-d7ce1bb94b11: ms-toolsai.jupyter
+[2022-02-17 14:50:42.176] [sharedprocess] [info] Renamed to /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528
+[2022-02-17 14:50:42.178] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter
+[2022-02-17 14:50:42.186] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter
+[2022-02-17 14:53:22.970] [sharedprocess] [info] Worker process with pid 18981 terminated normally (type: fileWatcher, window: 1).
+[2022-02-17 14:53:24.007] [sharedprocess] [info] Starting worker process with pid 19495 (type: fileWatcher, window: 1).

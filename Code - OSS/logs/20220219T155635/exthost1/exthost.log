@@ -1,0 +1,17 @@
+[2022-02-19 15:56:37.262] [exthost] [info] Extension host with pid 202733 started
+[2022-02-19 15:56:37.262] [exthost] [info] Skipping acquiring lock for /home/emamaker/.config/Code - OSS/User/workspaceStorage/f2182bd78c7249f69ddef2c1719c3bc5.
+[2022-02-19 15:56:37.295] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-02-19 15:56:37.298] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-02-19 15:56:37.300] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:requirements.txt'
+[2022-02-19 15:56:37.380] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-02-19 15:56:37.403] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-02-19 15:56:37.530] [exthost] [info] Eager extensions activated
+[2022-02-19 15:56:37.556] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-19 15:56:37.563] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-19 15:56:42.457] [exthost] [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+[2022-02-19 18:40:02.949] [exthost] [error] [ms-python.python] provider FAILED
+[2022-02-19 18:40:02.950] [exthost] [error] Error: DisposableStore is missing...
+	at G._convertCompletionItem (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:93:105486)
+	at G.resolveCompletionItem (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:93:105266)
+[2022-02-19 19:04:39.632] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-02-19 19:04:39.642] [exthost] [info] Extension host with pid 202733 exiting with code 0

@@ -1,0 +1,7 @@
+[2022-02-27 18:45:59.581] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-02-27 18:45:59.597] [main] [info] ExtensionHostStarterWorker created
+[2022-02-27 18:46:00.641] [main] [info] Starting extension host with pid 21726 (fork() took 7 ms).
+[2022-02-27 18:46:00.642] [main] [info] ExtensionHostStarterWorker.start() took 8 ms.
+[2022-02-27 18:47:19.388] [main] [info] Extension host with pid 21726 exited with code: 0, signal: null.
+[2022-02-27 18:47:20.442] [main] [info] Starting extension host with pid 22277 (fork() took 6 ms).
+[2022-02-27 18:47:20.442] [main] [info] ExtensionHostStarterWorker.start() took 7 ms.

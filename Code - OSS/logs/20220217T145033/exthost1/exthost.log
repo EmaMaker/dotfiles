@@ -1,0 +1,26 @@
+[2022-02-17 14:50:34.616] [exthost] [info] Extension host with pid 18920 started
+[2022-02-17 14:50:34.616] [exthost] [info] Skipping acquiring lock for /home/emamaker/.config/Code - OSS/User/workspaceStorage/839eb6b31b70af5535203ecadcaa448a.
+[2022-02-17 14:50:34.678] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-02-17 14:50:34.688] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-02-17 14:50:34.709] [exthost] [info] ExtensionService#_doActivateExtension jebbs.markdown-extended, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-02-17 14:50:34.938] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-02-17 14:50:34.940] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-02-17 14:50:34.965] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-02-17 14:50:34.983] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-02-17 14:50:35.002] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2022-02-17 14:50:35.448] [exthost] [info] Eager extensions activated
+[2022-02-17 14:50:35.453] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-17 14:50:35.461] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-17 14:53:22.950] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-02-17 14:53:22.956] [exthost] [info] Extension host with pid 18920 exiting with code 0
+[2022-02-17 14:53:24.354] [exthost] [info] Extension host with pid 19494 started
+[2022-02-17 14:53:24.354] [exthost] [info] Skipping acquiring lock for /home/emamaker/.config/Code - OSS/User/workspaceStorage/bf5fac1e2af9dd3a5a18e4def7a719b9.
+[2022-02-17 14:53:24.420] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+[2022-02-17 14:53:24.488] [exthost] [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+[2022-02-17 14:53:24.677] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-02-17 14:53:24.679] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-02-17 14:53:24.704] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-02-17 14:53:24.716] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-02-17 14:53:24.887] [exthost] [info] Eager extensions activated
+[2022-02-17 14:53:24.913] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-17 14:53:24.917] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'

@@ -1,0 +1,47 @@
+[2022-02-17 15:09:12.963] [renderer1] [info] IExtensionHostStarter.start() took 162 ms.
+[2022-02-17 15:09:12.994] [renderer1] [critical] Extension 'ms-python.python CANNOT USE these API proposals 'languageStatus, quickPickSortByLabel, testObserver, notebookEditor'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+[2022-02-17 15:09:12.994] [renderer1] [critical] Extension 'ms-toolsai.jupyter CANNOT USE these API proposals 'notebookConcatTextDocument, notebookControllerKind, notebookDebugOptions, notebookDeprecated, notebookEditor, notebookEditorDecorationType, notebookEditorEdit, notebookMessaging, notebookMime, notebookCellExecutionState, portsAttributes, textDocumentNotebook, quickPickSortByLabel'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+[2022-02-17 15:09:13.152] [renderer1] [error] [Extension Host] (node:2640) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `electron --trace-deprecation ...` to show where the warning was created)
+[2022-02-17 15:09:13.605] [renderer1] [warning] [File Watcher (parcel)] correcting a path to watch that seems to be a symbolic link or wrong casing (original: /home/emamaker/Documents/Projects/TorPageViewer_Selenium_Docker, real: /media/archive2/Nextcloud_mininas/Projects/TorPageViewer_Selenium_Docker)
+[2022-02-17 15:09:13.628] [renderer1] [error] [Extension Host] extension activation failed Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookEditor.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookEditor.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at E (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:64217)
+	at Object.onDidChangeCellMetadata (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:107:51867)
+	at u.addEventHandlers (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:796055)
+	at new u (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:794720)
+	at Object.t.resolveInstance (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:238380)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:237585
+	at Array.map (<anonymous>)
+	at Object.t.resolveInstance (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:238150)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:237585
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:236533
+	at Array.map (<anonymous>)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:236505
+	at Array.map (<anonymous>)
+	at Object.t.resolveInstance (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:238150)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:237585
+	at Object.t.resolve (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:237848)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:228945
+	at e._get (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:228711)
+	at e.get (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:227423)
+	at a.get (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:124:61150)
+	at /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:66:276365
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+	at async /home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:51:786403
+	at async t.activate (/home/emamaker/.vscode-oss/extensions/ms-toolsai.jupyter-2022.1.1301856528/out/client/extension.js:51:786082)
+	at async Promise.all (index 1)
+[2022-02-17 15:20:21.427] [renderer1] [error] ValueError: `column` parameter (1) is not in a valid range (0-0) for line 128 ('\n').: Error: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 128 ('\n').
+	at /home/emamaker/.vscode-oss/extensions/ms-python.python-2022.0.1814523869/out/client/extension.js:67:139263
+	at /home/emamaker/.vscode-oss/extensions/ms-python.python-2022.0.1814523869/out/client/extension.js:67:139557
+	at Immediate.<anonymous> (/home/emamaker/.vscode-oss/extensions/ms-python.python-2022.0.1814523869/out/client/extension.js:67:139920)
+	at processImmediate (internal/timers.js:461:21)
+[2022-02-17 19:55:23.535] [renderer1] [info] The pty host became responsive again
+[2022-02-17 20:44:35.081] [renderer1] [info] The pty host became responsive again
+[2022-02-17 20:44:35.088] [renderer1] [info] The pty host became responsive again
+[2022-02-17 21:21:12.190] [renderer1] [info] The pty host became responsive again
+[2022-02-17 21:21:12.976] [renderer1] [info] Webgl lost context, disposing of webgl renderer
+[2022-02-17 21:21:13.169] [renderer1] [info] The pty host became responsive again
+[2022-02-17 22:06:01.752] [renderer1] [info] The pty host became responsive again
+[2022-02-17 22:06:01.765] [renderer1] [info] The pty host became responsive again

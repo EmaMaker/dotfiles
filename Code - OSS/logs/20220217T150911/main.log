@@ -1,0 +1,6 @@
+[2022-02-17 15:09:11.677] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-02-17 15:09:11.699] [main] [info] ExtensionHostStarterWorker created
+[2022-02-17 15:09:12.808] [main] [info] Starting extension host with pid 2640 (fork() took 7 ms).
+[2022-02-17 15:09:12.809] [main] [info] ExtensionHostStarterWorker.start() took 8 ms.
+[2022-02-17 19:49:03.071] [main] [info] Enabling inspect port on extension host with pid 2640.
+[2022-02-17 19:49:03.079] [main] [info] Enabling inspect port on extension host with pid 2640.

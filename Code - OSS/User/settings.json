@@ -1,0 +1,18 @@
+{
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "git.autofetch": true,
+    "emulator.emulatorPath": "~/Android/Sdk/emulator",
+    "editor.fontSize": 13,
+    "telemetry.telemetryLevel": "off"
+}

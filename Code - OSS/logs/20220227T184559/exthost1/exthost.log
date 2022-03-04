@@ -1,0 +1,28 @@
+[2022-02-27 18:46:00.947] [exthost] [info] Extension host with pid 21726 started
+[2022-02-27 18:46:00.947] [exthost] [info] Skipping acquiring lock for /home/emamaker/.config/Code - OSS/User/workspaceStorage/f716d36175bf159850d12ec9bac1bf1f.
+[2022-02-27 18:46:00.979] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-02-27 18:46:00.981] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-02-27 18:46:01.025] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-02-27 18:46:01.035] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-02-27 18:46:01.051] [exthost] [info] Eager extensions activated
+[2022-02-27 18:46:01.062] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 18:46:01.065] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 18:47:19.374] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-02-27 18:47:19.378] [exthost] [info] Extension host with pid 21726 exiting with code 0
+[2022-02-27 18:47:20.838] [exthost] [info] Extension host with pid 22277 started
+[2022-02-27 18:47:20.838] [exthost] [info] Skipping acquiring lock for /home/emamaker/.config/Code - OSS/User/workspaceStorage/24d36359fe5652be1fbc590b27d19a3d.
+[2022-02-27 18:47:20.875] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-02-27 18:47:20.877] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-02-27 18:47:20.888] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-02-27 18:47:20.897] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-02-27 18:47:21.056] [exthost] [info] Eager extensions activated
+[2022-02-27 18:47:21.058] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 18:47:21.063] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 18:48:40.797] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+[2022-02-27 18:48:40.886] [exthost] [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+[2022-02-27 18:56:36.215] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-02-27 18:56:36.228] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-02-27 18:56:36.258] [exthost] [info] ExtensionService#_doActivateExtension jebbs.markdown-extended, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-02-27 18:56:36.585] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2022-02-27 18:57:05.019] [exthost] [info] ExtensionService#_doActivateExtension vscode.image-preview, startup: false, activationEvent: 'onCustomEditor:imagePreview.previewEditor'
+[2022-02-27 20:25:40.572] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
