@@ -3,9 +3,10 @@ set $sup Mod4
 
 # Screen setup
 # Turn on screen connected to AMD card
-#exec --no-startup-id /usr/bin/xrandr --output DVI-I-0 --off --output DVI-I-1 --off --output HDMI-0 --off --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-5 --off --output DisplayPort-1-3 --off --output HDMI-1-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DVI-1-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-1-0 --off
-set $screen1 HDMI-1-1
-set $screen2 DVI-1-1
+exec_always /home/emamaker/.screenlayout/layout.sh
+#exec --no-startup-id xrandr --output DisplayPort-0 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-0 --off --output DVI-1 --off
+set $screen2 HDMI-0
+set $screen1 DisplayPort-0
 
 
 ######### Basic I3 Behaviour Config #########
@@ -31,7 +32,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec prime-run alacritty
+bindsym $mod+Shift Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -144,8 +146,9 @@ bindsym Mod1+Tab workspace back_and_forth
 bindsym Shift+F2 exec i3-input -F 'rename workspace to "%s"' -P 'New name for this workspace: '
 
 ############### gaps ###############
+
 # gaps
-gaps inner 15
+gaps inner 10
 # smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace)
@@ -202,7 +205,8 @@ focus_follows_mouse no
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # picom
-exec_always picom -b -i 0.65
+exec_always picom --config $HOME/.config/picom/picom.conf
+
 
 # Applets / System-tray
 exec --no-startup-id nm-applet
@@ -218,11 +222,13 @@ exec_always --no-startup-id feh --bg-fill $bg;
 #bindsym $mod+Tab exec --no-startup-id "killall -s SIGUSR1 i3expod.py"
 
 #rofi
-bindsym $mod+e exec --no-startup-id rofi -show drun -show-icons
+#running with prime so that applications launched from rofi use the dedicated gpu
+bindsym $mod+e exec --no-startup-id prime-run rofi -show drun -show-icons 
+bindsym Mod1+e exec --no-startup-id rofi -show drun -show-icons 
 
 #scratchpad
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus exec --no-startup-id rofi -show window -show-icons
+bindsym $mod+minus move scratchpad
+bindsym $mod+Shift+minus exec --no-startup-id rofi -show window -show-icons
 
 ############### workspaces mapping ###############
 # Define names for default workspaces for which we configure key bindings later on.
@@ -319,20 +325,35 @@ workspace $ws20 output $screen2
 ############### end of workspace mapping ###############
 
 ############### i3 resurrect ###############
-set $i3_resurrect i3-resurrect
+set $i3_resurrect /home/emamaker/.local/bin/i3-resurrect
+
+exec --no-startup-id i3_resurrect restore -w $ws10; sleep 1; $i3_resurrect restore -w $ws20
+#exec_always /home/emamaker/.config/i3/restore.sh
+
+
 
 # Save workspace mode.
 mode "save" {
-  bindsym 1 exec $i3_resurrect save -w 1
-  bindsym 2 exec $i3_resurrect save -w 2
-  bindsym 3 exec $i3_resurrect save -w 3
-  bindsym 4 exec $i3_resurrect save -w 4
-  bindsym 5 exec $i3_resurrect save -w 5
-  bindsym 6 exec $i3_resurrect save -w 6
-  bindsym 7 exec $i3_resurrect save -w 7
-  bindsym 8 exec $i3_resurrect save -w 8
-  bindsym 9 exec $i3_resurrect save -w 9
-  bindsym 0 exec $i3_resurrect save -w 0
+  bindsym 1 exec $i3_resurrect save -w $ws1
+  bindsym 2 exec $i3_resurrect save -w $ws2
+  bindsym 3 exec $i3_resurrect save -w $ws3
+  bindsym 4 exec $i3_resurrect save -w $ws4
+  bindsym 5 exec $i3_resurrect save -w $ws5
+  bindsym 6 exec $i3_resurrect save -w $ws6
+  bindsym 7 exec $i3_resurrect save -w $ws7
+  bindsym 8 exec $i3_resurrect save -w $ws8
+  bindsym 9 exec $i3_resurrect save -w $ws9
+  bindsym 0 exec $i3_resurrect save -w $ws10
+  bindsym q exec $i3_resurrect save -w $ws11
+  bindsym w exec $i3_resurrect save -w $ws12
+  bindsym e exec $i3_resurrect save -w $ws13
+  bindsym r exec $i3_resurrect save -w $ws14
+  bindsym t exec $i3_resurrect save -w $ws15
+  bindsym y exec $i3_resurrect save -w $ws16
+  bindsym u exec $i3_resurrect save -w $ws17
+  bindsym i exec $i3_resurrect save -w $ws18
+  bindsym o exec $i3_resurrect save -w $ws19
+  bindsym p exec $i3_resurrect save -w $ws20
 
   # Back to normal: Enter, Escape, or s
   bindsym Return mode "default"
@@ -345,16 +366,26 @@ bindsym $mod+s mode "save"
 
 # Restore workspace mode.
 mode "restore" {
-  bindsym 1 exec $i3_resurrect restore -w 1
-  bindsym 2 exec $i3_resurrect restore -w 2
-  bindsym 3 exec $i3_resurrect restore -w 3
-  bindsym 4 exec $i3_resurrect restore -w 4
-  bindsym 5 exec $i3_resurrect restore -w 5
-  bindsym 6 exec $i3_resurrect restore -w 6
-  bindsym 7 exec $i3_resurrect restore -w 7
-  bindsym 8 exec $i3_resurrect restore -w 8
-  bindsym 9 exec $i3_resurrect restore -w 9
-  bindsym 0 exec $i3_resurrect restore -w 0
+  bindsym 1 exec $i3_resurrect restore -w $ws1
+  bindsym 2 exec $i3_resurrect restore -w $ws2
+  bindsym 3 exec $i3_resurrect restore -w $ws3
+  bindsym 4 exec $i3_resurrect restore -w $ws4
+  bindsym 5 exec $i3_resurrect restore -w $ws5
+  bindsym 6 exec $i3_resurrect restore -w $ws6
+  bindsym 7 exec $i3_resurrect restore -w $ws7
+  bindsym 8 exec $i3_resurrect restore -w $ws8
+  bindsym 9 exec $i3_resurrect restore -w $ws9
+  bindsym 0 exec $i3_resurrect restore -w $ws10
+  bindsym q exec $i3_resurrect restore -w $ws11
+  bindsym w exec $i3_resurrect restore -w $ws12
+  bindsym e exec $i3_resurrect restore -w $ws13
+  bindsym r exec $i3_resurrect restore -w $ws14
+  bindsym t exec $i3_resurrect restore -w $ws15
+  bindsym y exec $i3_resurrect restore -w $ws16
+  bindsym u exec $i3_resurrect restore -w $ws17
+  bindsym i exec $i3_resurrect restore -w $ws18
+  bindsym o exec $i3_resurrect restore -w $ws19
+  bindsym p exec $i3_resurrect restore -w $ws20
 
   # Back to normal: Enter, Escape, or n
   bindsym Return mode "default"
@@ -365,3 +396,7 @@ mode "restore" {
 
 bindsym $mod+n mode "restore"
 ############### end of i3-resurrect ###############
+
+
+exec /usr/lib/polkit-1/polkitd --no-debug
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
