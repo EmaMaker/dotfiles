@@ -8,7 +8,6 @@ exec_always /home/emamaker/.screenlayout/layout.sh
 set $screen2 HDMI-0
 set $screen1 DisplayPort-0
 
-
 ######### Basic I3 Behaviour Config #########
 # keyboard layout
 exec --no-startup-id setxkbmap -layout it
@@ -32,17 +31,17 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec prime-run alacritty
-bindsym $mod+Shift Return exec alacritty
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return prime-run exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # change focus
-#bindsym $mod+a focus left
-#bindsym $mod+s focus down
-#bindsym $mod+w focus up
-#bindsym $mod+d focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -51,10 +50,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+ograve move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -63,8 +62,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
-
+bindsym $mod+b split h
 # split in vertical orientation
 bindsym $mod+v split v
 
@@ -106,10 +104,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym ograve resize grow width 10 px or 10 ppt
+        bindsym j resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -133,15 +131,6 @@ default_orientation vertical
 
 exec_always --no-startup-id i3altlayout
 
-bindsym --release Mod1+w exec --no-startup-id xdotool key --clearmodifiers Up
-bindsym --release Mod1+a exec --no-startup-id xdotool key --clearmodifiers Left
-bindsym --release Mod1+s exec --no-startup-id xdotool key --clearmodifiers Down
-bindsym --release Mod1+d exec --no-startup-id xdotool key --clearmodifiers Right
-# bindsym --release Mod1+c exec --no-startup-id xdotool key --clearmodifiers Return
-
-bindsym --release Mod1+z exec --no-startup-id xdotool key --clearmodifiers XF86Back
-bindsym --release Mod1+x exec --no-startup-id xdotool key --clearmodifiers XF86Forward
-
 bindsym Mod1+Tab workspace back_and_forth
 bindsym Shift+F2 exec i3-input -F 'rename workspace to "%s"' -P 'New name for this workspace: '
 
@@ -149,8 +138,6 @@ bindsym Shift+F2 exec i3-input -F 'rename workspace to "%s"' -P 'New name for th
 
 # gaps
 gaps inner 10
-# smart_gaps on
-
 # Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
@@ -210,25 +197,25 @@ exec_always picom --config $HOME/.config/picom/picom.conf
 
 # Applets / System-tray
 exec --no-startup-id nm-applet
-exec --no-startup-id volctl
-
-# redshift
+#exec --no-startup-id volctl
 
 # wallpaper
-set $bg "/home/emamaker/Pictures/Wallpapers/material.jpg"
+set $bg "/home/emamaker/Pictures/Wallpapers/wp11058332-gruvbox-wallpapers.png"
 exec_always --no-startup-id feh --bg-fill $bg; 
-
-#i3 expo
-#bindsym $mod+Tab exec --no-startup-id "killall -s SIGUSR1 i3expod.py"
 
 #rofi
 #running with prime so that applications launched from rofi use the dedicated gpu
-bindsym $mod+e exec --no-startup-id prime-run rofi -show drun -show-icons 
-bindsym Mod1+e exec --no-startup-id rofi -show drun -show-icons 
+bindsym $mod+e exec --no-startup-id $HOME/.config/rofi/launchers/type-1/launcher.sh 
+bindsym Mod1+e exec --no-startup-id prime-run $HOME/.config/rofi/launchers/type-1/launcher.sh
+# rofi power-menu
+bindsym $mod+p exec --no-startup-id $HOME/.config/rofi/powermenu/type-1/powermenu.sh
+bindsym $mod+x exec --no-startup-id $HOME/.config/rofi/applets/bin/screenshot.sh
+bindsym $mod+o exec --no-startup-id $HOME/.config/rofi/applets/bin/volume.sh
+bindsym $mod+i exec --no-startup-id $HOME/.config/rofi/applets/bin/brightness.sh
+bindsym $mod+u exec --no-startup-id $HOME/.config/rofi/applets/bin/battery.sh
 
 #scratchpad
 bindsym $mod+minus move scratchpad
-bindsym $mod+Shift+minus exec --no-startup-id rofi -show window -show-icons
 
 ############### workspaces mapping ###############
 # Define names for default workspaces for which we configure key bindings later on.
@@ -328,9 +315,6 @@ workspace $ws20 output $screen2
 set $i3_resurrect /home/emamaker/.local/bin/i3-resurrect
 
 exec --no-startup-id i3_resurrect restore -w $ws10; sleep 1; $i3_resurrect restore -w $ws20
-#exec_always /home/emamaker/.config/i3/restore.sh
-
-
 
 # Save workspace mode.
 mode "save" {
@@ -400,3 +384,9 @@ bindsym $mod+n mode "restore"
 
 exec /usr/lib/polkit-1/polkitd --no-debug
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+for_window [class="Viewnior"] floating enable
+# assign to workspaces
+assign [class="TelegramDesktop"] $ws10
+assign [class="Whatsapp-for-linux"] $ws10
+assign [class="UXTerm"] $ws20
