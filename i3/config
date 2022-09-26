@@ -385,8 +385,23 @@ bindsym $mod+n mode "restore"
 exec /usr/lib/polkit-1/polkitd --no-debug
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle && amixer -q set Speaker toggle 
+bindsym XF86AudioMicMute exec amixer -q set Capture toggle 
+
 for_window [class="Viewnior"] floating enable
 # assign to workspaces
 assign [class="TelegramDesktop"] $ws10
 assign [class="Whatsapp-for-linux"] $ws10
+assign [class="discord"] $ws10
+assign [class="Whatstux"] $ws10
 assign [class="UXTerm"] $ws20
+
+
+# autostart
+exec telegram-desktop &
+exec xfce4-power-manager &
+exec whatstux &
+exec_always killall screenrotator; screenrotator &
+exec_always killall ruby; watch_table &
