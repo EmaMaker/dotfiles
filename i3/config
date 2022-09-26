@@ -403,5 +403,6 @@ assign [class="UXTerm"] $ws20
 exec telegram-desktop &
 exec xfce4-power-manager &
 exec whatstux &
-exec_always killall screenrotator; screenrotator &
+
 exec_always killall ruby; watch_table &
+exec_always killall rot8; rot8 -d eDP1 --touchscreen "Wacom Pen and multitouch sensor Finger" "Wacom Pen and multitouch sensor Pen Pen (0x9b1338a9)" "Wacom Pen and multitouch sensor Pen Eraser (0x9b1338a9)" &
