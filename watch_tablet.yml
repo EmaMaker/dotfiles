@@ -1,0 +1,8 @@
+input_device: /dev/input/by-path/platform-thinkpad_acpi-event
+
+modes:
+  laptop:
+    - killall cellwriter
+
+  tablet:
+    - cellwriter --dock-window=2 --window-struts --hide-window
