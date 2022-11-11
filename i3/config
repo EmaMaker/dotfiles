@@ -72,9 +72,9 @@ bindsym $mod+f fullscreen toggle
 popup_during_fullscreen smart
 
 # change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
+ bindsym $mod+Shift+s layout stacking
 bindsym $mod+t layout tabbed
-# bindsym $mod+Alt+e layout toggle split
+ bindsym $mod+Alt+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -124,7 +124,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Disable window titlebars entirely
-for_window [class="^.*"] border pixel 0
+#for_window [class="^.*"] border pixel 0
 
 #start in opposite orientation from your monitor
 default_orientation vertical 
@@ -138,9 +138,11 @@ bindsym Shift+F2 exec i3-input -F 'rename workspace to "%s"' -P 'New name for th
 
 # gaps
 gaps inner 10
+default_border pixel 3
+default_floating_border pixel 3 
 # Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+#smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -189,7 +191,7 @@ mouse_warping output
 focus_follows_mouse no
 
 # polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # picom
 exec_always picom --config $HOME/.config/picom/picom.conf
@@ -389,6 +391,8 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle && amixer -q set Speaker toggle 
 bindsym XF86AudioMicMute exec amixer -q set Capture toggle 
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 for_window [class="Viewnior"] floating enable
 # assign to workspaces
@@ -397,12 +401,16 @@ assign [class="Whatsapp-for-linux"] $ws10
 assign [class="discord"] $ws10
 assign [class="Whatstux"] $ws10
 assign [class="UXTerm"] $ws20
-
+for_window [class="Gnome-screenshot"] floating enable
 
 # autostart
-exec telegram-desktop &
-exec xfce4-power-manager &
-exec whatstux &
+exec --no-startup-id telegram-desktop 
+exec --no-startup-id xfce4-power-manager 
+exec --no-startup-id whatstux 
+exec --no-startup-id touchegg 
+exec --no-startup-id guake 
+exec --no-startup-id xfce4-panel --disable-wm-check
+exec --no-startup-id nm-applet
 
 exec_always killall ruby; watch_table &
 exec_always killall rot8; rot8 -d eDP1 --touchscreen "Wacom Pen and multitouch sensor Finger" "Wacom Pen and multitouch sensor Pen Pen (0x9b1338a9)" "Wacom Pen and multitouch sensor Pen Eraser (0x9b1338a9)" &
